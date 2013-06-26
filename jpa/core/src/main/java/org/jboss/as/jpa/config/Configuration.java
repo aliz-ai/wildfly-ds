@@ -37,6 +37,11 @@ public class Configuration {
     public static final String PROVIDER_MODULE = "jboss.as.jpa.providerModule";
 
     /**
+    * Doctusoft Commons: extended Hibernate persistence provider
+    */
+   public static final String PROVIDER_MODULE_DS_COMMON = "com.doctusoft.common";
+
+    /**
      * Hibernate 4 persistence provider
      */
     public static final String PROVIDER_MODULE_HIBERNATE4 = "org.hibernate";
@@ -59,6 +64,11 @@ public class Configuration {
      * default if no PROVIDER_MODULE is specified.
      */
     public static final String PROVIDER_MODULE_DEFAULT = PROVIDER_MODULE_HIBERNATE4;
+
+    /**
+     * Doctusoft Commons - Hibernate eXTension persistence provider class
+     */
+    public static final String PROVIDER_CLASS_DS_HIBERNATE = "com.doctusoft.common.hibernate.xt.ExtendedHibernatePersistence";
 
     /**
      * Hibernate persistence provider class
@@ -131,6 +141,7 @@ public class Configuration {
     static {
         // always choose the default hibernate version for the Hibernate provider class mapping
         // if the user wants a different version. they can specify the provider module name
+        providerClassToModuleName.put(PROVIDER_CLASS_DS_HIBERNATE, PROVIDER_MODULE_DS_COMMON);
         providerClassToModuleName.put(PROVIDER_CLASS_HIBERNATE, PROVIDER_MODULE_HIBERNATE4);
         providerClassToModuleName.put(PROVIDER_CLASS_HIBERNATE_OGM, PROVIDER_MODULE_HIBERNATE_OGM);
         providerClassToModuleName.put(PROVIDER_CLASS_TOPLINK_ESSENTIALS, PROVIDER_MODULE_TOPLINK);

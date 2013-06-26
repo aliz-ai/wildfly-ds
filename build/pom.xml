@@ -223,6 +223,52 @@
                 </dependency>
 
                 <dependency>
+                    <groupId>com.doctusoft.common</groupId>
+                    <artifactId>ds-common-core</artifactId>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>commons-logging</groupId>
+                            <artifactId>commons-logging</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.doctusoft.common</groupId>
+                    <artifactId>ds-common-hibernate-util</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.doctusoft.common</groupId>
+                    <artifactId>ds-common-hibernate-xt</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.doctusoft.common</groupId>
+                    <artifactId>ds-common-persistence-api</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.doctusoft.common</groupId>
+                    <artifactId>ds-common-persistence-hibernate</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.doctusoft.domain</groupId>
+                    <artifactId>ds-domain-core-api</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.doctusoft.domain</groupId>
+                    <artifactId>ds-domain-core-business</artifactId>
+                </dependency>
+
+                <dependency>
+                    <groupId>com.doctusoft.domain</groupId>
+                    <artifactId>ds-domain-core-hibernate</artifactId>
+                </dependency>
+
+                <dependency>
                     <groupId>com.github.relaxng</groupId>
                     <artifactId>relaxngDatatype</artifactId>
                 </dependency>

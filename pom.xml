@@ -77,8 +77,10 @@
         <version.antlr>2.7.7</version.antlr>
         <version.asm>3.3.1</version.asm>
         <version.ch.qos.cal10n>0.7.3</version.ch.qos.cal10n>
+        <version.com.doctusoft.common>3.0.0-SNAPSHOT</version.com.doctusoft.common>
+        <version.com.doctusoft.domain>3.0.0-SNAPSHOT</version.com.doctusoft.domain>
         <version.com.github.relaxng>2011.1</version.com.github.relaxng>
-        <version.com.google.guava>13.0.1</version.com.google.guava>
+        <version.com.google.guava>14.0.1</version.com.google.guava>
         <version.com.h2database>1.3.168</version.com.h2database>
         <version.com.sun.codemodel>2.6</version.com.sun.codemodel>
         <version.com.sun.faces>2.1.11-jbossorg-3</version.com.sun.faces>
@@ -135,7 +137,7 @@
         <version.org.codehaus.plexus.plexus-utils>2.0.4</version.org.codehaus.plexus.plexus-utils>
         <version.org.codehaus.woodstox.stax2-api>3.1.1</version.org.codehaus.woodstox.stax2-api>
         <version.org.codehaus.woodstox.woodstox-core-asl>4.1.1</version.org.codehaus.woodstox.woodstox-core-asl>
-        <version.org.hibernate>4.1.7.DS-SNAPSHOT</version.org.hibernate>
+        <version.org.hibernate>4.1.10.DS-CR1</version.org.hibernate>
         <version.org.hibernate.commons.annotations>4.0.1.Final</version.org.hibernate.commons.annotations>
         <version.org.hibernate.javax.persistence.hibernate-jpa-2.0-api>1.0.1.Final</version.org.hibernate.javax.persistence.hibernate-jpa-2.0-api>
         <version.org.hibernate.validator>4.2.0.Final</version.org.hibernate.validator>
@@ -227,7 +229,7 @@
         <version.org.jboss.threads>2.0.0.GA</version.org.jboss.threads>
         <version.org.jboss.web>7.0.17.Final</version.org.jboss.web>
         <version.org.jboss.web.jasper-jdt>7.0.3.Final</version.org.jboss.web.jasper-jdt>
-        <version.org.jboss.weld.weld>1.1.9.Final</version.org.jboss.weld.weld>
+        <version.org.jboss.weld.weld>1.1.9.DS-SNAPSHOT</version.org.jboss.weld.weld>
         <version.org.jboss.weld.weld-api>1.1.Final</version.org.jboss.weld.weld-api>
         <version.org.jboss.ws.api>1.0.0.GA</version.org.jboss.ws.api>
         <version.org.jboss.ws.common>2.0.4.GA</version.org.jboss.ws.common>
@@ -1197,6 +1199,22 @@
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>${version.com.h2database}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.doctusoft.common</groupId>
+                <artifactId>ds-common</artifactId>
+                <version>${version.com.doctusoft.common}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.doctusoft.domain</groupId>
+                <artifactId>ds-domain</artifactId>
+                <version>${version.com.doctusoft.domain}</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
 
             <dependency>
@@ -6008,6 +6026,7 @@
             </releases>
             <snapshots>
                 <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
             </snapshots>
         </repository>
         <repository>

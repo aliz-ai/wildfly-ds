@@ -321,6 +321,20 @@
             <maven-resource group="ch.qos.cal10n" artifact="cal10n-api"/>
         </module-def>
 
+        <module-def name="com.doctusoft.common">
+            <maven-resource group="com.doctusoft.common" artifact="ds-common-core" />
+            <maven-resource group="com.doctusoft.common" artifact="ds-common-hibernate-util" />
+            <maven-resource group="com.doctusoft.common" artifact="ds-common-hibernate-xt" />
+            <maven-resource group="com.doctusoft.common" artifact="ds-common-persistence-api" />
+            <maven-resource group="com.doctusoft.common" artifact="ds-common-persistence-hibernate" />
+        </module-def>
+
+        <module-def name="com.doctusoft.adm-core">
+            <maven-resource group="com.doctusoft.domain" artifact="ds-domain-core-api" />
+            <maven-resource group="com.doctusoft.domain" artifact="ds-domain-core-business" />
+            <maven-resource group="com.doctusoft.domain" artifact="ds-domain-core-hibernate" />
+        </module-def>
+
         <module-def name="com.github.relaxng">
             <maven-resource group="com.github.relaxng" artifact="relaxngDatatype" />
         </module-def>
